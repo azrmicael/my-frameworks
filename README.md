@@ -2,15 +2,17 @@
 
 <!-- Light Mode -->
 <p align="center">
-    <a href="https://github.com/azrmicael/my-frameworks/blob/569d1bdefbc93ae4ac90d52f71d94899866a4671/assets/code-white.svg#gh-light-mode-only" alt="My Frameworks" height="100">
+    <a href="https://azrmicael.github.io/my-frameworks/#gh-light-mode-only">
+    <img src="https://github.com/azrmicael/my-frameworks/blob/d8c36d92a832cabda64ead2f0f3a421a7e1f6314/assets/code-dark.svg#gh-light-mode-only" alt="Frontend Mentor" height="100">
 </p>
 
 <!-- Dark Mode -->
 <p align="center">
-    <a href="https://github.com/azrmicael/my-frameworks/blob/569d1bdefbc93ae4ac90d52f71d94899866a4671/assets/code-dark.svg#gh-dark-mode-only" alt="My Frameworks" height="100">
+    <a href="https://azrmicael.github.io/my-frameworks/#gh-dark-mode-only">
+    <img src="https://github.com/azrmicael/my-frameworks/blob/d8c36d92a832cabda64ead2f0f3a421a7e1f6314/assets/code-white.svg#gh-dark-mode-only" alt="Frontend Mentor" height="100">
 </p>
 
-# My Frameworks
+<h1 align="center">My Frameworks</h1>
 
 Here you will find some frameworks that I developed to speed up the construction of my websites.
 
