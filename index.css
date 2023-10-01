@@ -4,17 +4,25 @@
 
 :root {
     /* colors */
-    --clr-dark: hsl(0, 0%, 0%);
-    --clr-light: hsl(0, 0%, 100%);
+    --clr-dark: #1b1b31;
+    --clr-light: #ffffff;
+    --clr-accent: #fcc053;
+    --clr-accent-hover: #fccc5c;
 
     /* font-sizes */
-    --fs-600: 2rem;
-    --fs-500: 1.5rem;
-    --fs-400: 1rem;
-    --fs-300: 1rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.125rem;
+    --fs-400: 0.875rem;
+    --fs-300: 0.75rem;
 
     /* font-families */
-    --ff-primary: 'Source Code Pro', monospace;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Roboto Mono', monospace;
+
+    /* font-weights */
+    --fw-reg: 400;
+    --fw-bold: 700;
 }
 
 /* ======================================== */
@@ -23,15 +31,12 @@
 
 /*
   1. Use a more-intuitive box-sizing model
+  2. Remove default margin and padding
 */
 *, *::before, *::after {
     box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
-body, h1, h2, h3, h4, h5, p, figure, picture {
     margin: 0;
+    padding: 0;
 }
 /*
   3. Set the font-weight
@@ -50,10 +55,95 @@ body {
     line-height: 1.5;
     min-height: 100vh;
 }
+/* 
+  5. Set up the a
+*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /*
-  5. Remove built-in form typography styles
+  6. Improve media defaults
+*/
+img, picture, svg, canvas, video {
+    display: block;
+    max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
 */
 input, textarea, button, select {
     font: inherit;
 }
 
+
+/* ======================================== */
+/* --- GENERAL STYLES --------------------- */
+/* ======================================== */
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3.75rem;
+    width: 18.75rem;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    display: inline;
+    border: var(--clr-accent) solid 4px;
+    border-radius: 50%;
+    padding: 0.125rem;
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+.username {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-reg);
+    opacity: 0.8;
+}
+
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 0;
+}
+
+.item-link {
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.313rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    transition: background 400ms;
+}
+
+.item-link:hover {
+    background: var(--clr-accent-hover);
+}
+
+.fa-brands, .fas, .fa-solid {
+    padding-right: 1em;
+}
+
+footer {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
