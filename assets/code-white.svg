@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.000076mm"
+   height="31.559128mm"
+   viewBox="0 0 64.000076 31.559128"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.762246,-80.253568)">
+    <text
+       xml:space="preserve"
+       style="font-size:34.7303px;text-align:center;text-anchor:middle;display:inline;fill:#0d1117;fill-opacity:1;stroke-width:1.22098"
+       x="67.762283"
+       y="104.52069"
+       id="text2350"
+       inkscape:label="black"
+       inkscape:export-filename="code-white.svg"
+       inkscape:export-xdpi="95.249886"
+       inkscape:export-ydpi="95.249886"><tspan
+         sodipodi:role="line"
+         id="tspan2348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.7303px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';fill:#ffffff;fill-opacity:1;stroke-width:1.22098"
+         x="67.762283"
+         y="104.52069">&lt;/&gt;</tspan></text>
+  </g>
+</svg>
