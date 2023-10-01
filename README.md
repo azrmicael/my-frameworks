@@ -16,4 +16,4 @@
 
 Here you will find some frameworks that I developed to speed up the construction of my websites.
 
-By clicking on [My Frameworks](https://azrmicael.github.io/my-frameworks/), you have access to the web page of links that I created to organize the links of individual frameworks.
+By clicking on [My Frameworks](https://azrmicael.github.io/my-frameworks/), you have access to the links page I created to organize them individually.
