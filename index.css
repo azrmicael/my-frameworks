@@ -4,10 +4,10 @@
 
 :root {
     /* colors */
-    --clr-dark: #1b1b31;
+    --clr-dark: #181818;
     --clr-light: #ffffff;
-    --clr-accent: #fcc053;
-    --clr-accent-hover: #fccc5c;
+    --clr-accent: #009882;
+    --clr-accent-hover: #1DD6BB;
 
     /* font-sizes */
     --fs-700: 2rem;
@@ -118,7 +118,7 @@ h1 {
 
 .item-link {
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-transform: uppercase;
     display: flex;
     align-items: center;
