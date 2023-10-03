@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- My navigation -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="style.css">
+    <title>My Framework | Navigation</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div>
+            <img src="/assets/logo-512x512.png" alt="my framework logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <li class="active"><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Home</a></li>
+                <li><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Features</a></li>
+                <li><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Pricing</a></li>
+                <li class="disabled"><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Disabled</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+</body>
+</html>
