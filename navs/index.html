@@ -25,7 +25,23 @@
             <img src="https://github.com/azrmicael/my-frameworks/blob/main/assets/logo-512x512.png?raw=true" alt="my framework logo" class="logo">
         </div>
 
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <svg fill="var(--button-clr)" class="hamburger" viewBox="0 0 100 100" width="250">
+                <rect class="line top"
+                      width="80" height="10"
+                      x="10" y="15" rx="5">
+                </rect>
+                <rect class="line middle"
+                      width="80" height="10"
+                      x="10" y="45" rx="5">
+                </rect>
+                <rect class="line bottom"
+                      width="80" height="10"
+                      x="10" y="75" rx="5">
+                </rect>
+            </svg>
+        </button>
 
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">

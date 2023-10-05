@@ -259,37 +259,46 @@ input, textarea, button, select {
 /* --- COMPONENTS ------------------------- */
 /* ======================================== */
 
-/* --- Large Button ------ */
+/* --- Button One (hamburger) ------ */
 
-.large-button {
-    font-size: 2rem;
-    position: relative;
-    display: inline-grid;
-    z-index: 1;
-    place-items: center;
-    padding: 0 2em;
+.mobile-nav-toggle {
+    --button-clr: #ffffff;
+    width: 1.5rem;
     aspect-ratio: 1;
-    border-radius: 50%;
-    text-decoration: none;
-    letter-spacing: 2px;
+    border: 0;
 }
 
-.large-button::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background: hsl(var(--clr-white) / 0.15);
-    border-radius: 50%;
+.mobile-nav-toggle .line {
+    transition: 
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms
+    ;
+    transform-origin: center;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .line {
+    transition: 
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms
+    ;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45px;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .top {
+    rotate: 45deg;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .middle {
     opacity: 0;
-    transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
 
-.large-button:hover::after,
-.large-button:focus::after {
-    opacity: 1;
-    transform: scale(1.5);
+.mobile-nav-toggle[aria-expanded="true"] .bottom {
+    rotate: -45deg;
 }
 
 /* --- Primary Header ------ */
@@ -355,19 +364,18 @@ input, textarea, button, select {
         position: absolute;
         z-index: 2000;
         right: 1rem;
-        /* top: 2rem; */
         background: transparent;
-        background-image: url(https://github.com/azrmicael/my-frameworks/blob/2fa5baa12a1b84389f0d84ea15b22188aeab4dd7/assets/hamburger/icon-hamburger.svg?raw=true);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 1.5rem;
+        /* background-image: url(...?raw=true); */
+        /* background-repeat: no-repeat; */
+        /* background-position: center; */
+        width: 2.4rem;
         aspect-ratio: 1;
         border: 0;
     }
 
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(https://raw.githubusercontent.com/azrmicael/my-frameworks/2fa5baa12a1b84389f0d84ea15b22188aeab4dd7/assets/hamburger/icon-close.svg?raw=true);
-    }
+    /* .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(...?raw=true);
+    } */
 
     .mobile-nav-toggle:focus-visible {
         outline: 3px solid hsl(var(--clr-light));
