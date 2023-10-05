@@ -296,7 +296,8 @@ input, textarea, button, select {
 
 .logo {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-    height: 3rem;
+    width: 2rem;
+    aspect-ratio: 1;
 }
 
 .primary-header {
@@ -354,9 +355,9 @@ input, textarea, button, select {
         position: absolute;
         z-index: 2000;
         right: 1rem;
-        top: 2rem;
+        /* top: 2rem; */
         background: transparent;
-        background-image: url(/assets/hamburger/icon-hamburger.svg);
+        background-image: url(https://github.com/azrmicael/my-frameworks/blob/2fa5baa12a1b84389f0d84ea15b22188aeab4dd7/assets/hamburger/icon-hamburger.svg?raw=true);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -365,7 +366,7 @@ input, textarea, button, select {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(/assets/hamburger/icon-close.svg);
+        background-image: url(https://raw.githubusercontent.com/azrmicael/my-frameworks/2fa5baa12a1b84389f0d84ea15b22188aeab4dd7/assets/hamburger/icon-close.svg?raw=true);
     }
 
     .mobile-nav-toggle:focus-visible {
