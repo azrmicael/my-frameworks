@@ -34,7 +34,7 @@ button {
 
 .button-one .line {
     transition: 
-        y 300ms ease-in 300ms,
+        transform 300ms ease-in 300ms,
         rotate 300ms ease-in,
         opacity 0ms 300ms
     ;
@@ -43,17 +43,14 @@ button {
 
 .button-one[aria-expanded="true"] .line {
     transition: 
-        y 300ms ease-in,
+        transform 300ms ease-in,
         rotate 300ms ease-in 300ms,
         opacity 0ms 300ms
     ;
 }
 
-.button-one[aria-expanded="true"] :is(.top, .bottom) {
-    y: 45px;
-}
-
 .button-one[aria-expanded="true"] .top {
+    transform: translateY(20px);
     rotate: 45deg;
 }
 
@@ -62,6 +59,7 @@ button {
 }
 
 .button-one[aria-expanded="true"] .bottom {
+    transform: translateY(-20px);
     rotate: -45deg;
 }
 
